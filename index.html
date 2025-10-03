@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="nav-brand">MeuPortfólio</div>
+            <ul class="nav-menu">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Olá, meu nome é <span class="highlight">João Pedro</span></h1>
+            <p>Estudante e entusiasta em Análise e Desenvolvimento de Sistemas</p>
+            <button class="cta-button" onclick="scrollToSection('projetos')">Ver Meus Projetos</button>
+        </div>
+    </section>
+
+    <!-- Sobre -->
+    <section id="sobre" class="sobre">
+        <div class="container">
+            <h2>Sobre Mim</h2>
+            <div class="sobre-content">
+                <div class="sobre-texto">
+                    <p>Sou um desenvolvedor que tem entusiasmo em estudar e executar projetos simples na área de DB(Banco de Dados).</p>
+                    <p>Com experiência em:</p>
+                    <div class="habilidades">
+                        <span class="habilidade">HTML</span>
+                        <span class="habilidade">CSS</span>
+                        <span class="habilidade">JavaScript</span>
+                        <span class="habilidade">React</span>
+                        <span class="habilidade">Node.js</span>
+                        <span class="habilidade">Python</span>
+                        <span class="habilidade">GDscript</span>
+                        <span class="habilidade">C</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projetos -->
+    <section id="projetos" class="projetos">
+        <div class="container">
+            <h2>Meus Projetos</h2>
+            <div class="projetos-grid">
+                <div class="projeto-card">
+                    <div class="projeto-imagem">Imagem 1</div>
+                    <h3>Somniphobia</h3>
+                    <p>Somniphobia foi um projeto de programação na engine da Godot que participei como programador, tendo contribuido em mecânicas de jogo e implementação de sistemas.</p>
+                    <div class="projeto-links">
+                        <a href="#" class="btn">Demo</a>
+                        <a href="#" class="btn btn-secondary">Código</a>
+                    </div>
+                </div>
+                <div class="projeto-card">
+                    <div class="projeto-imagem">Imagem 2</div>
+                    <h3>Projeto 2</h3>
+                    <p>Descrição breve do projeto e tecnologias utilizadas.</p>
+                    <div class="projeto-links">
+                        <a href="#" class="btn">Demo</a>
+                        <a href="#" class="btn btn-secondary">Código</a>
+                    </div>
+                </div>
+                <div class="projeto-card">
+                    <div class="projeto-imagem">Imagem 3</div>
+                    <h3>Projeto 3</h3>
+                    <p>Descrição breve do projeto e tecnologias utilizadas.</p>
+                    <div class="projeto-links">
+                        <a href="#" class="btn">Demo</a>
+                        <a href="#" class="btn btn-secondary">Código</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="contato">
+        <div class="container">
+            <h2>Entre em Contato</h2>
+            <form class="contato-form">
+                <input type="text" placeholder="Seu Nome" required>
+                <input type="email" placeholder="Seu Email" required>
+                <textarea placeholder="Sua Mensagem" rows="5" required></textarea>
+                <button type="submit" class="btn">Enviar Mensagem</button>
+            </form>
+            <div class="contato-info">
+                <p>Email: seuemail@exemplo.com</p>
+                <p>Telefone: (11) 99999-9999</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Meu Portfólio. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
