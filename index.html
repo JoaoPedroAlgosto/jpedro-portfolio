@@ -101,7 +101,8 @@
             </div>
         </div>
     </section>
-        <!--Contato-->
+    
+    <!-- Contato -->
     <section id="contato" class="contato">
         <div class="container">
             <h2>Contato</h2>
@@ -119,7 +120,7 @@
                         <i class="fas fa-chevron-right seta"></i>
                     </div>
                     <div class="card-content">
-                        <p>Conecte-se comigo profissionalmente</p>
+                        <p>Meu Linkedin</p>
                         <a href="https://www.linkedin.com/in/jpedroaugusto/" class="btn-link">
                             <i class="fas fa-external-link-alt"></i>
                             João Pedro Augusto
@@ -135,7 +136,7 @@
                         <i class="fas fa-chevron-right seta"></i>
                     </div>
                     <div class="card-content">
-                        <p>Veja meus projetos e contribuições</p>
+                        <p>Meus outros projetos e repositórios</p>
                         <a href="https://github.com/JoaoPedroAlgosto" class="btn-link">
                             <i class="fas fa-external-link-alt"></i>
                             JoaoPedroAlgosto
@@ -161,8 +162,9 @@
             </div>
         </div>
     </section>
+
     <!-- Modais -->
-    <!-- Modal 1 -->
+    <!-- Modal 1 - Somniphobia -->
     <div id="modal1" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
@@ -195,8 +197,14 @@
 
                     <h3>Links</h3>
                     <div class="projeto-links">
-                        <a href="https://github.com/Andersonndiass/Somniphobia?tab=readme-ov-file" class="btn-link"><i class="fab fa-github"></i> Código Fonte
-    <!-- Modal 2 -->
+                        <a href="https://github.com/Andersonndiass/Somniphobia?tab=readme-ov-file" class="btn-link"><i class="fab fa-github"></i> Código Fonte</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2 - Forgotten -->
     <div id="modal2" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
@@ -210,7 +218,7 @@
                 </div>
                 <div class="modal-info">
                     <h3>Descrição do Mangá</h3>
-                    <p></p>
+                    <p>O Mangá conta a história trágica de um rapaz que perdeu a família em um acidente de um mundo futurista, e sua vida tentando lidar com a perda, o consumo de drogas e outros temas delicados.</p>
                     
                     <h3>Ferramentas utilizadas</h3>
                     <ul>
@@ -227,9 +235,51 @@
 
                     <h3>Links</h3>
                     <div class="projeto-links">
-                        <a href="#" class="btn-link"><i class="fab fa-github"></i> Drive do projeto (não finalizado)
+                        <a href="#" class="btn-link"><i class="fab fa-github"></i> Projeto não finalizado(sem acesso por enquanto.)</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-</body>
+    <!-- Modal 3 - Kuru -->
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Kuru</h2>
+            <div class="modal-body">
+                <div class="modal-imagem">
+                    <img src="Screenshot_6.png" alt="Kuru">
+                </div>
+                <div class="modal-imagem">
+                    <img src="Screenshot_4.png" alt="Kuru2">
+                </div>
+                <div class="modal-info">
+                    <h3>Descrição do Jogo</h3>
+                    <p>Descrição do projeto Kuru aqui.</p>
+                    
+                    <h3>Sistemas e Mecânicas de Gameplay</h3>
+                    <ul>
+                        <li>Mecânica 1</li>
+                        <li>Mecânica 2</li>
+                        <li>Mecânica 3</li>
+                    </ul>
+
+                    <h3>Tecnologias Utilizadas</h3>
+                    <div class="tech-tags">
+                        <span>Tecnologia 1</span>
+                        <span>Tecnologia 2</span>
+                    </div>
+
+                    <h3>Links</h3>
+                    <div class="projeto-links">
+                        <a href="#" class="btn-link"><i class="fab fa-github"></i> Repositório</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 <script>
     // funcionalidade do modal
 document.addEventListener('DOMContentLoaded', function() {
@@ -386,7 +436,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }, observerOptions);
     
     // Observe elements for animation
-    const animatedElements = document.querySelectorAll('.sobre-content, .projetos-grid, .contato-content');
+    const animatedElements = document.querySelectorAll('.sobre-content, .projetos-grid, .contato-simples');
     animatedElements.forEach(el => {
         el.style.opacity = '0';
         el.style.transform = 'translateY(30px)';
@@ -570,4 +620,11 @@ function debounce(func, wait) {
 window.addEventListener('resize', debounce(function() {
     // Recalculate any layout-dependent values if needed
 }, 250));
+
+// Função para expandir os cards de contato
+function expandirCard(card) {
+    card.classList.toggle('expanded');
+}
 </script>
+</body>
+</html>
